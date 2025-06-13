@@ -14,24 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## 🔍 Code Function Explanation Table
-
-| **Function / Feature**            | **Kaam**                                                                        |
-| --------------------------------- | ------------------------------------------------------------------------------------------------- |
-| `generateRandomEmail()`           | Random 10-letter ka email address banata hai jaise `abc123@1secmail.com`.                         |
-| `useState(...)`                   | React ke variables jaise `emailInfo`, `messages`, `loading`, aur `darkMode` ko control karta hai. |
-| `useEffect(...)`                  | App start hone par aur har 10 second ke baad inbox ko refresh karta hai.                          |
-| `fetchMessages()`                 | API call karke new emails fetch karta hai aur `messages` state ko update karta hai.               |
-| `fetchEmailBody(id)`              | Email ka full content API se fetch karta hai (subject + body), aur toast mein show karta hai.     |
-| `copyToClipboard()`               | Current email ko clipboard pe copy karta hai + toast dikhata hai "Email Copied!"                  |
-| `generateNewEmail()`              | Naya random email banata hai, purani messages clear karta hai, aur toast dikhata hai.             |
-| `<ToastContainer />`              | Ye React Toastify ka container hai — jitni bhi toast notifications hoti hain, yahi dikhata hai.   |
-| `darkMode` + `setDarkMode`        | Light/Dark mode toggle karta hai aur localStorage mein save bhi karta hai.                        |
-| `<LoadingSpinner />`              | Jab `loading` true ho to ek animated spinner dikhata hai jab tak data aa raha ho.                 |
-| `email-section` & `inbox-section` | UI ko logically divide karta hai: ek email address section, aur ek inbox message list.            |
-
-
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
